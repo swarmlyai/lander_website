@@ -68,3 +68,8 @@ footer {
 .social-links a:hover {
   color: #333333;
 }
+
+.bee-left {
+  display: inline-block;
+  transform: scaleX(-1);
+}
