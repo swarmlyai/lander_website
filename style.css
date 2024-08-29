@@ -10,6 +10,7 @@ body {
   background: #dcfbfa; 
   color: #555555; 
   line-height: 1.6;
+  font-size: 16px; /* Base font size for better readability on mobile */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,12 +35,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem; /* Consistent padding */
+  max-width: 100%; /* Ensure full width on mobile */
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem; /* Slightly smaller for mobile */
+  margin-bottom: 0.5rem;
   color: #444444; 
 }
 
@@ -56,12 +58,13 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem; /* Add gap for better spacing on mobile */
 }
 
 .social-links a {
   color: #555555;
-  font-size: 2rem;
-  margin: 0 0.75rem;
+  font-size: 1.5rem; /* Smaller icons for mobile */
+  margin: 0; /* Remove margin and use gap instead */
   transition: color 0.3s ease;
 }
 
@@ -72,4 +75,23 @@ footer {
 .bee-left {
   display: inline-block;
   transform: scaleX(-1);
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .social-links a {
+    font-size: 2rem;
+  }
 }
